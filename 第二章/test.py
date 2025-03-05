@@ -13,7 +13,7 @@ driver.get(url)
 html = driver.page_source
 
 # 解析HTML
-tree = etree.HTML(html)         
+tree = etree.HTML(html)     
 
 # 使用XPath提取表格数据
 rows = tree.xpath('//*[@id="datalist"]/table/tbody/tr')  # 获取每一行
